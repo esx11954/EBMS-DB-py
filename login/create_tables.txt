@@ -1,0 +1,22 @@
+create table role(
+    id integer primary key,
+    name varchar(32) not null
+);
+
+create table login_user(
+    id integer primary key,
+    name varchar(128) not null,
+    email varchar(256) not null,
+    password varchar(128) not null,
+    role integer not null
+);
+
+
+insert into role(id, name) values(1, 'ROLE_GENERAL');
+insert into role(id, name) values(2, 'ROLE_ADMIN');
+
+insert into login_user(id, name, email, password, role) 
+values(1, '矢野', 't_yano@eightbit.co.jp', '$2a$10$YxkLNi2XCeS66.MTsVd/FetMB.yAY2XYfk52Sy9V.O8QTwOKaJt3K', 2);
+
+insert into login_user(id, name, email, password, role) 
+values(2, 'eightbit', 'eightbit@eightbit.co.jp', '$2a$10$QIV2huHMTSGFC7WDYWYLPuCQ/oD92aBqRA6ql2TTBapHKnUiklF32', 1);

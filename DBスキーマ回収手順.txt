@@ -1,0 +1,10 @@
+懸案事項
+・book_masterのstockとそれに紐づくbookの整合性
+    bookのstatusがavailableの行数がstockに反映される
+    book_masterに最大在庫数を入れる？
+
+・bookのbook_idがbook_masterのidと一致する必要性
+    テストデータは1-5までとする
+    各3-5冊の本が貸出本として存在するものとする
+    
+
